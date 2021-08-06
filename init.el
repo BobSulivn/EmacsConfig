@@ -92,6 +92,17 @@
   ([remap describe-command] . helpful-command)
   ([remap describe-key] . helpful-key))
 
+(use-package all-the-icons ; Icons for doom-modeline
+  :if (display-graphic-p)
+  :commands all-the-icons-install-fonts
+  :init
+  (unless (find-font (font-spec :name "all-the-icons"))
+    (all-the-icons-install-fonts t)))
+
+(use-package all-the-icons-dired
+  :if (display-graphic-p)
+  :hook (dired-mode . all-the-icons-dired-mode))
+
 (use-package which-key
   :init (which-key-mode)
   :diminish (which-key-mode))
