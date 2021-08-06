@@ -106,13 +106,14 @@
 (use-package which-key
   :init (which-key-mode)
   :diminish (which-key-mode))
+  :config
+    (setq which-key-idle-delay 0.3))
 
 (use-package doom-modeline
   :init 
   (doom-modeline-mode 1)
   :custom 
   (doom-modeline-height 15)
-  :config
-  (setq which-key-idle-delay 0.3))
+  
 
 (use-package doom-themes)
