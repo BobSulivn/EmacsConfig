@@ -161,4 +161,4 @@
   ("f" nil "finished" :exit t))
 
 (bob/leader-keys
-  "ts" '(hydra-scale-text/body :which-key "scale text"))
+  "ts" '(hydra-text-scale/body :which-key "scale text"))
