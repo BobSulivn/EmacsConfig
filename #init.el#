@@ -162,3 +162,4 @@
 
 (bob/leader-keys
   "ts" '(hydra-scale-text :which-key "scale text"))
+
