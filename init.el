@@ -162,3 +162,13 @@
 
 (bob/leader-keys
   "ts" '(hydra-text-scale/body :which-key "scale text"))
+
+(use-package projectile
+  :diminish projectile-mode
+  :config (projectile-mode)
+  :bind-keymap
+  ("C-c p" . projectile-command-map)
+  :init
+  (when (file-directory-p "~/Developer")
+    (setq projectile-project-search-path '("~/Developer")))
+  (setq projectile-switch-project-action #'projectile-dired))
