@@ -182,4 +182,13 @@
   :custom
   (magit-display-buffer-function #'magit-display-buffer-same-window-except-diff-v1))
 
-;; TODO: Look into forge and ghub packages for emacs
+(use-package ghub)
+(ghub-request "GET" "/user" nil
+	      :forge 'github
+	      :host "api.github.com"
+	      :username "BobSulivn"
+	      :auth 'forge)
+
+(setq auth-sources '("~/.authinfo"))
+
+(use-package forge)
