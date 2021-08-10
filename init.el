@@ -176,13 +176,9 @@
 
 (use-package counsel-projectile
   :config (counsel-projectile-mode))
-<<<<<<< HEAD
 
 (use-package magit
   :commands (magit-status magit-get-current-branch)
   :custom
   (magit-display-buffer-function #'magit-display-buffer-same-window-except-diff-v1))
 
-
-=======
->>>>>>> 39bb6366544820e36586402246f67a58328ce9e4
