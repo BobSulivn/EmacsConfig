@@ -192,3 +192,5 @@
 (setq auth-sources '("~/.authinfo"))
 
 (use-package forge)
+
+(use-package org)
