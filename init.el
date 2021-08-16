@@ -203,8 +203,7 @@
 (use-package org
   :hook(org-mode . bob/org-mode-setup)
   :config
-  (setq org-ellipsis " ▾")
-  (org-hide-emphasis-markers t))
+  (setq org-ellipsis " ▾"))
 
 (use-package org-bullets
   :after org
