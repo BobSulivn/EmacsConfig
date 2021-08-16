@@ -194,7 +194,7 @@
 (use-package forge)
 
 (defun bob/org-mode-setup()
-  (org-ident-mode)
+  (org-indent-mode)
   (variable-pitch-mode 1)
   (auto-fill-mode 0)
   (visual-line-mode 1)
